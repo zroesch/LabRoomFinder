@@ -4,7 +4,23 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-auto justify-content-center">
-                    <p>Hello World</p>
+                    <input type="date" id="dateInput" name="dateInput" value="<%=dateNow %>" min="2012-08-06" max="2022-08-18">
+                    <!-- Date input event and handling -->
+                    <script>
+                    const dateInput = document.getElementById('dateInput');
+                    dateInput.addEventListener('change', event => {
+                        const inputDate = new Date(dateInput.value);
+                        // Need to add 1 to the date for some reason
+                        inputDate.setDate(inputDate.getDate() + 1);
+                        // Set variables for day, month, and year
+                        var day = inputDate.getDate();
+                        var month = inputDate.getMonth();
+                        var year = inputDate.getFullYear();
+                        console.log(inputDate.toISOString().slice(0, 10));
+                        // console.log(inputDate.toLocaleDateString());
+                        // console.log(day.toString() + month.toString() + year.toString());
+              })
+            </script>
                 </div>
             </div>
         </div>

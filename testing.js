@@ -15,6 +15,7 @@ for (let i = 0; i < schedule.childCount; i++){
         // classes.push(schedule.children[i].children)
         // console.log(schedule.children[i].role);
         for (let j = 1; j < schedule.children[i].children.length; j++) {
+            
             console.log(schedule.children[i].children[j].children[6].children[0].name);
             console.log(schedule.children[i].children[j].children[7].children[0].name);
             console.log(schedule.children[i].children[j].children[9].children[0].name);

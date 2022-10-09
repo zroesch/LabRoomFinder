@@ -18,17 +18,9 @@ app.use(express.json());
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
 
-// Class for class objects
-class Class {
-    // #height = 0;
-    // #width;
-    constructor(name, days, time, location){
-        this.name = name;
-        this.days = days;
-        this.time = time;
-        this.location = location;
-    }
-}
+const dateTest = new Date(Date.now());
+const dateNow = dateTest.toISOString().slice(0, 10);
+console.log(dateNow);
 
 
 
@@ -39,10 +31,9 @@ class Class {
 const address = "192.168.254.130";
 const port = 8000;
 app.listen(port, address);
-
 app.get('/', function(req, res) {
     res.render('pages/index', {
         // EJS variable to server-side variable
-        //perseveranceLink: perseveranceLink
+        dateNow: dateNow
     });
 })
