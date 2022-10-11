@@ -1,28 +1,7 @@
 var fs = require('fs');
 const schedule = require('./public/schedule.json');
 
-// const numm = new Date(Date.now());
-// console.log(numm.getDay());
-/**
- * new Date(year, monthIndex, day, hours, minutes, seconds)
- * new Date(dateString)
- * date.getDay(): returns the day of the week (0-6)
- * M-Th = 1-4
- * 
- */
-
-var testing = "8-10:30AM";
-console.log(testing.split("-"));
-
-
-
-/**
- * Start: Enter specific time. Thu 2 pm. find the room with the most time.
- * steps could be:
- *  check if the class is open at that specific time
- *  
- * Return the open lab rooms in order of time remaining
- */
+const cecsLabs = ["ECS-405", "ECS-413", "ECS-414", "ECS-407", "ECS-411", "ECS-412", "ECS-416", "ECS-403", "ECS-404", "ECS-305"];
 
 /**
  * Data that is needed for each class
@@ -33,15 +12,7 @@ console.log(testing.split("-"));
  *
  */
 
-
-
-const cecsLabs = ["ECS-405", "ECS-413", "ECS-414", "ECS-407", "ECS-411", "ECS-412", "ECS-416", "ECS-403", "ECS-404", "ECS-305"];
-
-// Parse the info for just the cecs labs and create objects with 
-// Make array with the days of the week "Su", "M", ....
-// Have each day be an array of tuples (startTime, endTime)
-
-console.log(Date.parse("8-10:30AM"));
+// 
 
 // Class for class objects
 class Class {
@@ -70,3 +41,40 @@ class Class {
         this.classroom = classroom;
     }
 }
+
+
+
+
+
+
+
+// const numm = new Date(Date.now());
+// console.log(numm.getDay());
+/**
+ * new Date(year, monthIndex, day, hours, minutes, seconds)
+ * new Date(dateString)
+ * date.getDay(): returns the day of the week (0-6)
+ * M-Th = 1-4
+ * 
+ */
+
+// var testing = "8-10:30AM";
+// console.log(testing.split("-"));
+
+
+
+/**
+ * Start: Enter specific time. Thu 2 pm. find the room with the most time.
+ * steps could be:
+ *  check if the class is open at that specific time
+ *  
+ * Return the open lab rooms in order of time remaining
+ */
+
+
+
+
+
+
+// console.log(Date.parse("8-10:30AM"));
+
