@@ -4,27 +4,58 @@ const schedule = require('./public/schedule.json');
 const cecsLabs = ["ECS-405", "ECS-413", "ECS-414", "ECS-407", "ECS-411", "ECS-412", "ECS-416", "ECS-403", "ECS-404", "ECS-305"];
 
 /**
- * Data that is needed for each class
- * 1. Days
- * 2. Time
- * 3. Location/Classroom
- * 4. className
- *
+ * Class/Lab name is index: 9 -> index 0.name
+ * 
  */
 
-// 
+for (let i = 0; i < schedule.childCount; i++){
+    let obj = schedule.children[i];
+    if (schedule.children[i].role.toString() == 'table'){
+        for (let j = 1; j < schedule.children[i].childCount; j++){
+            console.log(schedule.children[i].children[j].toString());
+        }
+    }
+}
+
+/**
+ * Use minutes. (Hours * 60) + Minutes = 
+ * max 1440 which is midnight
+ */
+
+var timeTest = "9:30-12:15PM";
+timeTest.split('-');
+console.log(timeTest);
+
+class Time {
+    #start;
+    #end;
+
+    constructor(start, end) {
+        this.#start = start;
+        this.#end = end;
+        this.time = [this.#start, this.#end];
+    }
+
+    get start() {
+        return this.#start;
+    }
+
+    get end() {
+        return this.#end;
+    }
+}
 
 // Class for class objects
 class Class {
     // #height = 0;
     // #width;
-    #sunday = new Array();
-    #monday = new Array();
-    #tuesday = new Array();
-    #wednesday = new Array();
-    #thursday = new Array();
-    #friday = new Array();
-    #saturday = new Array();
+    #sunday = new Array();  //0
+    #monday = new Array(); //1
+    #tuesday = new Array(); // 2
+    #wednesday = new Array(); // 3
+    #thursday = new Array(); // 4
+    #friday = new Array(); //5
+    #saturday = new Array(); // 6
     
     #week = [this.#sunday, this.#monday, this.#tuesday, this.#wednesday, this.#thursday, this.#friday, this.#saturday];
 
