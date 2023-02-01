@@ -4,29 +4,9 @@ const schedule = require('./public/schedule.json');
 const cecsLabs = ["ECS-405", "ECS-413", "ECS-414", "ECS-407", "ECS-411", "ECS-412", "ECS-416", "ECS-403", "ECS-404", "ECS-305"];
 
 /**
- * Class/Lab name is index: 9 -> index 0.name
- * 
+ * Time object for tuple of start and end time in minutes
  */
-
-for (let i = 0; i < schedule.childCount; i++){
-    let obj = schedule.children[i];
-    if (schedule.children[i].role.toString() == 'table'){
-        for (let j = 1; j < schedule.children[i].childCount; j++){
-            console.log(schedule.children[i].children[j].toString());
-        }
-    }
-}
-
-/**
- * Use minutes. (Hours * 60) + Minutes = 
- * max 1440 which is midnight
- */
-
-var timeTest = "9:30-12:15PM";
-timeTest.split('-');
-console.log(timeTest);
-
-class Time {
+ class Time {
     #start;
     #end;
 
@@ -43,6 +23,53 @@ class Time {
     get end() {
         return this.#end;
     }
+
+    get time() {
+        return this.time;
+    }
+}
+
+/**
+ * 
+ * @param {*} hours  String of hours
+ * @param {*} minutes  String of minutes
+ * @returns INTEGER the time of the day in minutes
+ */
+ function toMinutes(hours, minutes){
+    return ((Number(hours) * 60) + Number(minutes));
+}
+
+/**
+ * 
+ * @param {*} time String time 
+ * @returns start and end time in minutes
+ */
+function parseTimeString(time) {
+    if (time.includes("AM")) {
+        var splitTimes = time.split("-");
+        var startTime = splitTimes[0].split(":");
+        var startTimeMinutes = toMinutes(startTime[0], startTime[1]);
+        var endTime = time.substring(0, time[1].indexOf("AM"));
+        var endTimeSplit = endTime.split(":");
+        var endTimeMinutes = toMinutes(endTimeSplit[0], endTimeSplit[1]);
+
+        const result = new Time(startTimeMinutes, endTimeMinutes);
+        return result;
+    }
+    else if (time.includes("PM")) {
+        var splitTimes = time.split("-");
+        var startTime = time[0].split(":");
+        var endTime = time.substring(0, time[1].indexOf("PM"));
+        var endTimeSplit = endTime.split(":");
+        var endTimeMinutes = toMinutes(endTimeSplit[0], endTimeSplit[1]);
+
+        const result = new Time(startTimeMinutes, endTimeMinutes);
+        return result;
+    }
+    else {
+        console.log("Time not right format or N/A");
+    }
+    return 0;
 }
 
 // Class for class objects
@@ -73,12 +100,17 @@ class Class {
     }
 }
 
-
-
-
-
-
-
+for (let i = 0; i < schedule.childCount; i++){
+    if (schedule.children[i].role.toString() == "table"){
+        for (let j = 1; j < schedule.children[i].childCount; j++){
+            if (cecsLabs.includes(schedule.children[i].children[j].children[9].children[0].name.toString())) {
+                console.log(schedule.children[i].children[j].children[6].children[0].name); // Days String
+                console.log(schedule.children[i].children[j].children[7].children[0].name); // Time String
+                console.log(schedule.children[i].children[j].children[9].children[0].name); // Room Number
+            }            
+        }
+    }
+}
 // const numm = new Date(Date.now());
 // console.log(numm.getDay());
 /**
