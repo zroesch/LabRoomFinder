@@ -1,0 +1,309 @@
+{
+    "table": [
+        {
+            "days": "TuTh",
+            "times": "12-1:15PM",
+            "room": "ECS-413"
+        },
+        {
+            "days": "MW",
+            "times": "1-2:15PM",
+            "room": "ECS-413"
+        },
+        {
+            "days": "MW",
+            "times": "1-2:15PM",
+            "room": "ECS-414"
+        },
+        {
+            "days": "MW",
+            "times": "10:30-11:45AM",
+            "room": "ECS-403"
+        },
+        {
+            "days": "MW",
+            "times": "1-2:15PM",
+            "room": "ECS-403"
+        },
+        {
+            "days": "F",
+            "times": "1-3:30PM",
+            "room": "ECS-404"
+        },
+        {
+            "days": "F",
+            "times": "8-10:30AM",
+            "room": "ECS-403"
+        },
+        {
+            "days": "F",
+            "times": "1-3:30PM",
+            "room": "ECS-405"
+        },
+        {
+            "days": "F",
+            "times": "1-3:30PM",
+            "room": "ECS-411"
+        },
+        {
+            "days": "MW",
+            "times": "9-10:15AM",
+            "room": "ECS-413"
+        },
+        {
+            "days": "MW",
+            "times": "10:30-11:45AM",
+            "room": "ECS-413"
+        },
+        {
+            "days": "TuTh",
+            "times": "10:30-11:45AM",
+            "room": "ECS-411"
+        },
+        {
+            "days": "F",
+            "times": "12-2:30PM",
+            "room": "ECS-412"
+        },
+        {
+            "days": "F",
+            "times": "10-12:45PM",
+            "room": "ECS-411"
+        },
+        {
+            "days": "MW",
+            "times": "6:30-7:45PM",
+            "room": "ECS-411"
+        },
+        {
+            "days": "TuTh",
+            "times": "10:30-11:45AM",
+            "room": "ECS-403"
+        },
+        {
+            "days": "TuTh",
+            "times": "10:30-11:45AM",
+            "room": "ECS-404"
+        },
+        {
+            "days": "TuTh",
+            "times": "10:30-11:45AM",
+            "room": "ECS-412"
+        },
+        {
+            "days": "MW",
+            "times": "12-1:15PM",
+            "room": "ECS-404"
+        },
+        {
+            "days": "MW",
+            "times": "12-1:15PM",
+            "room": "ECS-412"
+        },
+        {
+            "days": "MW",
+            "times": "12-1:15PM",
+            "room": "ECS-416"
+        },
+        {
+            "days": "TuTh",
+            "times": "4:30-5:45PM",
+            "room": "ECS-416"
+        },
+        {
+            "days": "TuTh",
+            "times": "3-4:15PM",
+            "room": "ECS-416"
+        },
+        {
+            "days": "MW",
+            "times": "6:30-7:45PM",
+            "room": "ECS-403"
+        },
+        {
+            "days": "Sa",
+            "times": "1-2:40PM",
+            "room": "ECS-414"
+        },
+        {
+            "days": "Sa",
+            "times": "3-5:30PM",
+            "room": "ECS-305"
+        },
+        {
+            "days": "TuTh",
+            "times": "5-5:50PM",
+            "room": "ECS-413"
+        },
+        {
+            "days": "TuTh",
+            "times": "6-7:15PM",
+            "room": "ECS-413"
+        },
+        {
+            "days": "MW",
+            "times": "9-10:15AM",
+            "room": "ECS-411"
+        },
+        {
+            "days": "F",
+            "times": "9-11:30AM",
+            "room": "ECS-412"
+        },
+        {
+            "days": "MW",
+            "times": "12:30-1:45PM",
+            "room": "ECS-411"
+        },
+        {
+            "days": "Sa",
+            "times": "8-10:30AM",
+            "room": "ECS-414"
+        },
+        {
+            "days": "TuTh",
+            "times": "6:30-7:45PM",
+            "room": "ECS-411"
+        },
+        {
+            "days": "MW",
+            "times": "11-12:15PM",
+            "room": "ECS-405"
+        },
+        {
+            "days": "F",
+            "times": "10-11:50AM",
+            "room": "ECS-414"
+        },
+        {
+            "days": "F",
+            "times": "12-2:45PM",
+            "room": "ECS-414"
+        },
+        {
+            "days": "MW",
+            "times": "10-10:50AM",
+            "room": "ECS-414"
+        },
+        {
+            "days": "MW",
+            "times": "11-12:15PM",
+            "room": "ECS-414"
+        },
+        {
+            "days": "TuTh",
+            "times": "11-11:50AM",
+            "room": "ECS-416"
+        },
+        {
+            "days": "TuTh",
+            "times": "12-1:15PM",
+            "room": "ECS-416"
+        },
+        {
+            "days": "TuTh",
+            "times": "4:30-5:45PM",
+            "room": "ECS-411"
+        },
+        {
+            "days": "TuTh",
+            "times": "4:30-5:45PM",
+            "room": "ECS-411"
+        },
+        {
+            "days": "MW",
+            "times": "2-3:15PM",
+            "room": "ECS-412"
+        },
+        {
+            "days": "MW",
+            "times": "3-3:50PM",
+            "room": "ECS-414"
+        },
+        {
+            "days": "MW",
+            "times": "4-5:15PM",
+            "room": "ECS-414"
+        },
+        {
+            "days": "F",
+            "times": "12-2:45PM",
+            "room": "ECS-403"
+        },
+        {
+            "days": "MW",
+            "times": "8-9:15AM",
+            "room": "ECS-405"
+        },
+        {
+            "days": "TuTh",
+            "times": "6-6:50PM",
+            "room": "ECS-416"
+        },
+        {
+            "days": "TuTh",
+            "times": "7-8:15PM",
+            "room": "ECS-416"
+        },
+        {
+            "days": "Sa",
+            "times": "8-9:40AM",
+            "room": "ECS-407"
+        },
+        {
+            "days": "Sa",
+            "times": "10-12:30PM",
+            "room": "ECS-305"
+        },
+        {
+            "days": "MW",
+            "times": "12:30-1:45PM",
+            "room": "ECS-405"
+        },
+        {
+            "days": "MW",
+            "times": "2-3:15PM",
+            "room": "ECS-411"
+        },
+        {
+            "days": "TuTh",
+            "times": "7:30-8:45PM",
+            "room": "ECS-414"
+        },
+        {
+            "days": "TuTh",
+            "times": "8-9:15PM",
+            "room": "ECS-413"
+        },
+        {
+            "days": "TuTh",
+            "times": "11-12:15PM",
+            "room": "ECS-405"
+        },
+        {
+            "days": "TuTh",
+            "times": "2-3:15PM",
+            "room": "ECS-405"
+        },
+        {
+            "days": "TuTh",
+            "times": "5-6:15PM",
+            "room": "ECS-414"
+        },
+        {
+            "days": "F",
+            "times": "11-1:45PM",
+            "room": "ECS-413"
+        },
+        {
+            "days": "MW",
+            "times": "3:30-4:45PM",
+            "room": "ECS-412"
+        },
+        {
+            "days": "TuTh",
+            "times": "2-3:15PM",
+            "room": "ECS-414"
+        }
+    ]
+}
